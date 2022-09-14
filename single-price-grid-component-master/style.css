@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    padding: 1.25rem;
+    ;
+}
+
+.btn {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-family: 'karla', sans-serif;
+    font-size: bold;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem;
+    box-shadow: 0.15rem 0.15rem 0.15rem rgb(176, 139, 139);
+
+
+
+}
+
+p {
+    line-height: 1.6;
+}
+
+.upper {
+    padding: 2rem;
+
+}
+
+.title {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+}
+
+.upperdescription {
+    color: hsl(218, 22%, 67%);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.leftbottom {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem;
+
+
+}
+
+.leftbottomtitle {
+    margin-bottom: 1rem;
+}
+
+.leftbottomvalue {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+
+}
+
+h3 span {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.leftbottomdescription {
+    margin: 1rem 0;
+}
+
+.rightbottom {
+    background-color: hsl(179, 58%, 53%);
+    padding: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    
+}
+
+.rightbottomtitle {
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width:768px) {
+
+ body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+ }
+    .container {
+        width: 700px;
+        margin: auto;
+    }
+
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .leftbottom {
+        flex: 1;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .rightbottom {
+        flex: 1;
+        border-bottom-left-radius: 0;
+    }
+}
